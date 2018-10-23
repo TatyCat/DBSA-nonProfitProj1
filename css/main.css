@@ -1157,11 +1157,11 @@ a {
 }
 
 .w3-xlarge {
-    font-size: 24px!important
+    font-size: 150%!important
 }
 
 .w3-xxlarge {
-    font-size: 36px!important
+    font-size: 5vw!important
 }
 
 .w3-xxxlarge {
@@ -1258,7 +1258,8 @@ a {
 }
 
 .w3-padding {
-    padding: 8px 16px!important
+    /* padding: 8px 16px!important */
+    padding: .9% 1.8%!important
 }
 
 .w3-padding-large {
@@ -1690,80 +1691,99 @@ a {
 /* ------ Custom CSS Styles - Tatyanna C. ------ */
 
 /* Nav Bar */
-.topNav .icon {
-    /* Hides the link that should open and close the topnav on small screens */
-    display: none;
-    font-size: 2em;
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden
-}
-
-* a {
-    text-decoration: none
-}
-
-
-.dropdown:hover .dropdown-content {
-    /* Show the dropdown menu when the user moves the mouse over the dropdown button */
-    display: block
-}
-
-.active {
-    color: #a9aaaa
-}
-
-.floatMenuBars{
-    float: right!important;
-}
-
-@media screen and (max-width: 600px) {
-    /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-    /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-    /* .topNav a:not(:first-child), .dropdown .dropbtn { */
-    .topNav .menu, .dropdown .dropbtn {
-        /* .topNav .w3-right:not(:first-child), .dropdown .dropbtn { */
-        display: none
+    .topNav .icon {
+        /* Hides the link that should open and close the topnav on small screens */
+        display: none;
+        font-size: 2em;
     }
-    .topNav a.icon {
-        float: right;
+
+    .dropdown {
+        float: left;
+        overflow: hidden
+    }
+
+    .dropdown:hover .dropdown-content {
+        /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+        display: block
+    }
+
+    .active {
+        color: #a9aaaa
+    }
+
+    .floatMenuBars {
+        float: right!important;
+    }
+
+    @media screen and (max-width: 600px) {
+        /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+        /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+        /* .topNav a:not(:first-child), .dropdown .dropbtn { */
+        .topNav .menu, .dropdown .dropbtn {
+            display: none
+        }
+        .topNav a.icon {
+            float: right;
+            display: block;
+            /* color: #ff5722; */
+            color: rgb(26, 26, 26);
+        }
+        .topNav.responsive {
+            position: relative
+        }
+        .topNav.responsive a.icon {
+            position: absolute;
+            right: 0;
+            top: 0
+        }
+        .topNav.responsive a:not(.icon), .topNav.responsive button {
+            display: table;
+            width: 100%;
+            float: none !important;
+        }
+        .topNav.responsive .dropdown {
+            float: none !important;
+        }
+        .topNav.responsive .dropdown-content {
+            position: relative
+        }
+        .topNav.responsive .menu .dropdown .dropbtn, .topNav.responsive div.w3-dropdown-hover {
+            display: block;
+            width: 100%;
+            text-align: center !important;
+        }
+        .floatMenuBars {
+            float: none!important;
+        }
+    }
+
+/* General */
+    * a {
+        text-decoration: none
+    }
+    .center {
         display: block;
-        color: #ff5722
-    }
-    .topNav.responsive {
-        position: relative
-    }
-    .topNav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0
-    }
-    .topNav.responsive a:not(.icon){
-        display:table;
+        margin-left: auto;
+        margin-right: auto;
         width: 100%;
-        float: none !important;
     }
-    .topNav.responsive .dropdown {
-        float: none !important;
-    }
-    .topNav.responsive .dropdown-content {
-        position: relative
-    }
-    .topNav.responsive .menu .dropdown .dropbtn {
-        display: block;
-        width: 100%;
-        text-align: center !important;
-    }
-    .floatMenuBars{
-        float: none!important;
-    }
-}
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
+/* Hero */
+    header h1 span:not(.dbInitials){
+        /* header font emboss for visibility */
+        text-shadow: 0 5px 10px #11151d, 0 1px 0 #fff;
+    }
+
+    header div {
+        background: rgba(7, 77, 161, 0.4);
+        -moz-border-radius: 2px;
+        -ms-border-radius:  2px;
+        -o-border-radius:  2px;
+        -webkit-border-radius:  2px;
+        border-radius: 2px;
+        padding: 1% 0;
+    }
+
+    header div:not(h1.span) {
+        filter: blur(30px);
+    }

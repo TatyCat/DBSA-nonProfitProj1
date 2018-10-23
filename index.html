@@ -18,8 +18,10 @@
                     <a href="#" class="menu w3-bar-item w3-button">Donate</a>
         
                     <div class="w3-dropdown-hover dropdown">
-                        <button class="menu w3-button w3-wide dropbtn">...</button>
-                        <div class="w3-dropdown-content">
+                        <button class="menu w3-button w3-wide dropbtn .w3-dropdown-click">
+                                <i class="fa fa-caret-down"></i>
+                                ...</button>
+                        <div class="w3-dropdown-content dropdown-content">
                             <a href="#Events" class="menu w3-button">Events</a>
                             <a href="#Resources" class="menu w3-button">Resources</a>
                             <a href="#FAQ" class="menu w3-bar-item w3-button">FAQ</a>
@@ -27,19 +29,22 @@
                             <a href="#Contact" class="menu w3-bar-item w3-button">Contact Us</a>
                         </div>
                     </div>
+
+                    <a href="#" class="menu w3-bar-item w3-button">Donate</a> <!-- added in test -->
+
                 </div>
-                <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">&#8801;</a>
+                <a href="javascript:void(0);" class="icon w3-bar-item" onclick="responsiveMenu()">&#8801;</a>
             </div>
         </div>
 
 
 
         <!-- Hero -->
-        <header class="w3-display-container w3-wide">
+        <header class="w3-display-container w3-wide w3-margin-top"> <!-- *w3-margin-top">  -->
             <img class="" src="images/seagulls-1514839_1920.jpg" alt="tampa bay dbsa" style="max-width: 100%; height: auto">
             <div class="w3-display-middle w3-margin-top w3-center">
-                <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>DB</b></span>
-                    <span class="w3-hide-small w3-text-light-grey">Architects</span></h1>
+                <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min dbInitials"><b>DB</b></span>
+                    <span class="w3-text-white">Support Association of <br> Tampa Bay</span></h1>
             </div>
         </header>
 
