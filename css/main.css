@@ -1824,10 +1824,6 @@ a {
         padding: 1% 0;
     }
 
-    header div:not(h1.span) {
-        filter: blur(30px);
-    }
-
     .announcementText{
         font-family: monospace !important;
     }
