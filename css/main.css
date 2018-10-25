@@ -1149,11 +1149,11 @@ a {
 }
 
 .w3-medium {
-    font-size: 15px!important
+    font-size: 100%!important
 }
 
 .w3-large {
-    font-size: 18px!important
+    font-size: 120%!important
 }
 
 .w3-xlarge {
@@ -1426,7 +1426,7 @@ a {
 
 .w3-black, .w3-hover-black:hover {
     color: #fff!important;
-    background-color: #000!important
+    background-color: rgb(27, 28, 29)!important
 }
 
 .w3-grey, .w3-hover-grey:hover, .w3-gray, .w3-hover-gray:hover {
@@ -1767,6 +1767,12 @@ a {
         .floatMenuBars {
             float: none!important;
         }
+
+        .donateButton{ /* DELETE */
+            border-right: 3px solid rgb(245, 218, 66) !important;
+            color: #4CAF50 !important;
+            font-family: fantasy;
+        }
     }
 
 /* General */
@@ -1780,19 +1786,33 @@ a {
         margin-top: 5%;
     }
 
+    .ctaBckgrd{
+        background-color: rgb(245, 218, 66);
+    }
+
+    .link{
+        color: rgb(66, 129, 210);
+        text-decoration: underline;
+    }
+
 /* Hero */
     .heroImg{
         width: 1500px;
         height: 800px;
         max-width: 100%;
         height: auto;
-        padding: 2vw;
-        vertical-align: middle;
+        
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
     }
 
     header h1 span:not(.dbInitials){
         /* header font emboss for visibility */
         text-shadow: 0 5px 10px #11151d, 0 1px 0 #fff;
+        font-family: Verdana, sans-serif;
     }
 
     header div {
@@ -1807,4 +1827,13 @@ a {
 
     header div:not(h1.span) {
         filter: blur(30px);
+    }
+
+    .announcementText{
+        font-family: monospace !important;
+    }
+
+/* Location Section */
+    .city{
+        margin-top: .2%;
     }
