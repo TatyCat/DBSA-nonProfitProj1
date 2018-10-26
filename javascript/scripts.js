@@ -4,4 +4,3 @@ function responsiveMenu() {
     const nav = document.querySelector("#topNavBarID");
     nav.classList.toggle("responsive")
 }
-
